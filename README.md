@@ -1,13 +1,131 @@
-# React + Vite
+# 🧩 UI Components Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple and accessible UI component library built with **React**, **TypeScript**, and **TailwindCSS**.  
+It demonstrates strong focus on **design systems**, **component architecture**, **accessibility**, **responsiveness**, and **clear documentation**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Components
 
-## Expanding the ESLint configuration
+- **Badge**  
+  A small label component that can display statuses with different variants and sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# design-system" 
+- **Navbar**  
+  A flexible and responsive navigation bar with customizable alignment and color variants.
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- TypeScript
+- TailwindCSS
+- Storybook (for UI documentation and component previews)
+
+---
+
+## 📸 Storybook Screenshots
+
+You can preview all components with different props using **Storybook**.
+
+| Badge Examples | Navbar Examples |
+|:--------------:|:---------------:|
+| ![Badge Example](./screenshots/badge.png) | ![Navbar Example](./screenshots/navbar.png) |
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+
+# 📦 Install dependencies
+
+```bash
+npm install
+```
+
+# 🚀 Start the Storybook server
+
+```bash
+npm run storybook
+```
+
+---
+
+# 🧩 Usage
+
+### Example usage of the **Badge** component:
+
+```tsx
+import Badge from "./components/Badge";
+
+function App() {
+  return (
+    <Badge label="New" variant="success" size="small" />
+  );
+}
+```
+
+---
+
+### Example usage of the **Navbar** component:
+
+```tsx
+import Navbar from "./components/Navbar";
+
+function App() {
+  return (
+    <Navbar
+      variant="primary"
+      orientation="center"
+      links={[
+        { label: "Home", href: "/" },
+        { label: "Services", href: "/services" },
+        { label: "Contact", href: "/contact" },
+      ]}
+    />
+  );
+}
+```
+
+---
+
+# 📖 Documentation
+
+Each component is fully documented using **Storybook**.
+
+This includes:
+
+- Clear prop tables
+- Variants and customization examples
+- Accessibility considerations
+- Responsive behavior
+
+Components are built following best practices for:
+
+- ✅ Design System consistency
+- ✅ Accessibility (ARIA roles)
+- ✅ Responsive layouts
+- ✅ Reusability and scalability
+
+---
+
+# 📸 Screenshots
+
+Preview of components inside Storybook:
+
+| Badge Component | Navbar Component |
+|:---------------:|:----------------:|
+| ![Badge Screenshot](./screenshots/badge.png) | ![Navbar Screenshot](./screenshots/navbar.png) |
+
+---
+
+# 📬 Feedback
+
+Have any ideas to improve this project?  
+Feel free to open issues or pull requests!
+
+---
